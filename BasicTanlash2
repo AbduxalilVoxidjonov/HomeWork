@@ -1,0 +1,80 @@
+// 1 masala
+Console.Write("Daqiqalar sonini kiriting: ");
+        int minutes = int.Parse(Console.ReadLine());
+
+        int hours = minutes / 60;     // soatni hisoblash
+        int mins  = minutes % 60;     // qolgan daqiqalar
+
+        Console.WriteLine($"{hours}:{mins}");
+
+//2-masala
+Console.Write("Yoshingizni kiriting: ");
+        int age = int.Parse(Console.ReadLine());
+
+        string category;
+
+        if (age >= 0 && age <= 12)
+        {
+            category = "Bola";
+        }
+        else if (age >= 13 && age <= 19)
+        {
+            category = "O'smir";
+        }
+        else if (age >= 20 && age <= 59)
+        {
+            category = "Kattalar";
+        }
+        else if (age >= 60)
+        {
+            category = "Katta";
+        }
+        else
+        {
+            category = "Noto‘g‘ri yosh kiritildi!";
+        }
+
+        Console.WriteLine("Yosh toifasi: " + category);
+
+//3-masala
+Console.Write("1-fan bahosi (0-100): ");
+        int b1 = int.Parse(Console.ReadLine());
+
+        Console.Write("2-fan bahosi (0-100): ");
+        int b2 = int.Parse(Console.ReadLine());
+
+        Console.Write("3-fan bahosi (0-100): ");
+        int b3 = int.Parse(Console.ReadLine());
+
+        double avg = (b1 + b2 + b3) / 3.0;  // o‘rtacha ball
+
+        string result =
+            (avg >= 80 && avg <= 100) ? "A'lo" :
+            (avg >= 60 && avg <= 79)  ? "Yaxshi" :
+            (avg >= 40 && avg <= 59)  ? "Qoniqarli" :
+                                        "Qoniqarsiz";
+
+        Console.WriteLine($"O‘rtacha ball: {avg}");
+        Console.WriteLine("Natija: " + result);
+
+//4-masala
+
+Random rand = new Random();
+        int number = rand.Next(1, 101); // 1–100 gacha tasodifiy son
+
+        int nums = 0;
+
+        Console.WriteLine("1 dan 100 gacha son toping!");
+
+        while (nums != number)
+        {
+            Console.Write("Son kiriting: ");
+            nums = int.Parse(Console.ReadLine());
+
+            string mm = 
+                nums == number ? "To‘g‘ri! Siz topdingiz!" :
+                nums > number  ? "Kichikroq son kiriting!" :
+                                  "Kattaroq son kiriting!";
+
+            Console.WriteLine(mm);
+        }
