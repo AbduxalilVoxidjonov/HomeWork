@@ -1,0 +1,43 @@
+// 1 masala
+using System.Text;
+
+Console.Write("Belgi kiriting: ");
+
+char n =  char.Parse(Console.ReadLine());
+int i = (int) n;
+if(i>=65 && i <= 90)
+{
+    Console.WriteLine("Kiritilgan belgi katta harf");
+}
+else if (i >= 97 && i <= 122)
+{
+    Console.WriteLine("Kiritilgan belgi kichik harf");
+}
+
+// 2 masala
+using System.Text;
+
+Console.Write("Belgi kiriting: ");
+
+char n =  char.Parse(Console.ReadLine());
+
+if(n=='H'|| n == 'h')
+{
+    Console.WriteLine("Ajoyib");
+}
+else if(n=='Y' || n=='y')
+{
+    Console.WriteLine("Afsus");
+}else
+{
+    Console.WriteLine("Noto'g'ri belgi kiritildi");
+}
+
+// 3 masala
+using System.Text;
+
+Console.Write("Ismingizni kiriting: ");
+
+string n =  (Console.ReadLine());
+
+Console.Write($"{n[0]} birinchi harfi");
