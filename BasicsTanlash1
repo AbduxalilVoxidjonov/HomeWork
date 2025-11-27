@@ -1,0 +1,57 @@
+// 1 masala
+
+using System;
+
+Console.Write("Son kiriting: ");
+int num= Convert.ToInt32(Console.ReadLine());
+
+Console.WriteLine("So'z kiriting: ");
+string n =  (Console.ReadLine());
+string str = num>n.Length ? n.ToUpper() : n.ToLower();
+
+Console.WriteLine(str);
+
+
+// 2 masala
+int x = 15;
+        int y = 10;
+
+        string result;
+
+        if (x > y)
+        {
+            result = "x is greater than y";
+        }
+        else if (x < y)
+        {
+            result = "x is less than y";
+        }
+        else if (x == y)
+        {
+            result = "x is equal to y";
+        }
+        else
+        {
+            result = "x and y are not comparable";
+        }
+
+        Console.WriteLine(result);
+
+
+//3 masala
+Console.Write("Hafta kunini kiriting (o'zbekcha): ");
+        string kun = Console.ReadLine().ToLower().Trim();
+
+        string result = kun switch
+        {
+            "dushanba"   => "Monday",
+            "seshanba"   => "Tuesday",
+            "chorshanba" => "Wednesday",
+            "payshanba"  => "Thursday",
+            "juma"       => "Friday",
+            "shanba"     => "Saturday",
+            "yakshanba"  => "Sunday",
+            _            => "Bunday hafta kuni mavjud emas"
+        };
+
+        Console.WriteLine("Inglizchasi: " + result);
