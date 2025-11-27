@@ -1,0 +1,41 @@
+
+// 1 masala.
+Console.WriteLine("Birinchi sonni kiriting: ");
+int bir = Convert.ToInt16(Console.ReadLine());
+
+Console.WriteLine("Amalni kiriting: ");
+char amal = Convert.ToChar(Console.ReadLine());
+
+Console.WriteLine("Ikkinchi sonni kiriting: ");
+int ikki = Convert.ToInt16(Console.ReadLine());
+
+Double  natija =(amal) switch
+{
+    '+' => bir + ikki,
+    '-' => bir - ikki,
+    '*' => bir * ikki,
+    '/' => bir / ikki,
+};
+
+
+// 2 masala.
+Console.WriteLine("Oxirgi sonni kiriting: ");
+int bir = Convert.ToInt16(Console.ReadLine());
+int sum = 0;
+for (int i = 1; i <= bir; i++)
+{
+   sum += i;
+}
+Console.WriteLine($"1 dan {bir} gacha sonlar yig'indisi: {sum}");
+
+
+
+// 3 masala.
+Console.WriteLine("Sonni kiriting: ");
+int son = Convert.ToInt16(Console.ReadLine());
+if (son % 2 == 0)
+{
+    Console.WriteLine("Juft son");
+}
+
+Console.WriteLine("Toq son: ");
